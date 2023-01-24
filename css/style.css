@@ -89,6 +89,12 @@ html{
   .card:hover{
     background-color: grey;
   }
+@media (max-width: 800px){
+    .card{
+      width:40vw;
+      height: 80vh;
+    }
+  }
 
   @media (max-width: 413px){
     .card{
