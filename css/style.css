@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+      height: 100vh;
+      width:100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1a1d;
+}
+
+
+.card {
+  width: 25vw;
+  height: 70vh;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 3rem;
+  line-height: -2rem;
+}
+.card img{
+  z-index: 1;
+  margin-right: 1rem;
+  width:6rem;
+  height: 6rem;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 10vw;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 130%;
+  animation: Ashura 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes Ashura {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 0.5rem;
+  border-radius: 1.5rem;
+}
+ .card:hover:before {
+    background-image: linear-gradient(180deg, red, yellow);
+    animation: Ashura2 3.5s linear infinite;
+  } 
+ .card:hover:after {
+    background-image: none;
+    background-color: black;
+  } 
+@keyframes Ashura2 {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .card:hover{
+    background-color: grey;
+  }
+
+  @media (max-width: 800px){
+    .card{
+      width:40vw;
+      height: 90vh;
+    }
+  }
