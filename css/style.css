@@ -29,8 +29,13 @@ html{
 .card h2 {
   z-index: 1;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: -2rem;
+}
+.card:hover h2{
+  color:black;
+  font-weight: bolder;
 }
 .card img{
   z-index: 1;
