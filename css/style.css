@@ -90,9 +90,9 @@ html{
     background-color: grey;
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 413px){
     .card{
-      width:40vw;
-      height: 90vh;
+      width:80vw;
+      height: 60vh;
     }
   }
