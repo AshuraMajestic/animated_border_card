@@ -28,7 +28,7 @@ html{
 }
 .card h2 {
   z-index: 1;
-  color: white;
+  color: ;
   font-size: 3rem;
   line-height: -2rem;
 }
@@ -75,7 +75,7 @@ html{
   } 
  .card:hover:after {
     background-image: none;
-    background-color: black;
+    background-color: #00FFFF;
   } 
 @keyframes Ashura2 {
     from {

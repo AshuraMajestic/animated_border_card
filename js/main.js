@@ -1,7 +1,7 @@
 document.querySelector('.card').addEventListener('mouseover',()=>{
     document.getElementById('name').innerText="AshuraMajestic";
     document.getElementById('img').src="img/github.png";
-    document.querySelector('html').style.backgroundColor="white";
+    document.querySelector('html').style.backgroundColor="#FF69B4";
 })
 
 document.querySelector('.card').addEventListener('mouseout',()=>{
